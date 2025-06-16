@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block nav_left %}
+  <a href="/">Essay Grading</a>
+  <a href="/goal">Goal</a>
+{% endblock %}
+{% block content %}
+<main>
+  <section class = "info-section">
+    <h2 style="color: #4a90e2; font-size: 2rem; margin-bottom: 1.2rem;">About the Automated Essay Scoring System</h2>
+    
+    <h3 style="color: #357abd; margin-top: 2rem;">What is an AES System?</h3>
+    <p>
+      An <strong>Automated Essay Scoring (AES) System</strong> is an advanced software tool that evaluates and scores written essays using artificial intelligence and natural language processing. AES systems are designed to provide instant, objective, and consistent feedback to writers, helping them improve their writing skills and saving educators significant time.
+    </p>
+    
+    <h3 style="color: #357abd; margin-top: 2rem;">Features of Our AES System</h3>
+    <ul style="margin-left: 1.2rem;">
+      <li><strong>Grammar & Spelling Check:</strong> Instantly highlights grammar issues and spelling mistakes.</li>
+      <li><strong>Score Prediction:</strong> Uses a trained LSTM neural network to predict essay scores on a 10-point scale.</li>
+      <li><strong>Detailed Feedback:</strong> Provides actionable suggestions for improvement, including vocabulary and structure tips.</li>
+      <li><strong>Advanced Vocabulary Detection:</strong> Recognizes and rewards the use of sophisticated words and phrases.</li>
+      <li><strong>Downloadable Reports:</strong> Easily download your evaluation as a PDF or DOCX file.</li>
+      <li><strong>Modern UI:</strong> Clean, responsive interface with light/dark mode support for comfortable use.</li>
+      <li><strong>File Upload:</strong> Upload DOC/DOCX files for instant analysis.</li>
+    </ul>
+    
+    <h3 style="color: #357abd; margin-top: 2rem;">How Does It Work?</h3>
+    <p>
+      Our AES system leverages a <strong>Long Short-Term Memory (LSTM) neural network</strong>—a type of deep learning model well-suited for understanding sequences of text. The process involves:
+    </p>
+    <ol style="margin-left: 1.2rem;">
+      <li><strong>Preprocessing:</strong> Cleans and normalizes the essay text.</li>
+      <li><strong>Feature Extraction:</strong> Calculates readability scores, word counts, and other linguistic features.</li>
+      <li><strong>Tokenization:</strong> Converts text into sequences for the LSTM model.</li>
+      <li><strong>Scoring:</strong> The LSTM model predicts a score based on both the essay content and extracted features.</li>
+      <li><strong>Grammar Feedback:</strong> Uses LanguageTool to highlight grammar and spelling issues, providing color-coded feedback.</li>
+      <li><strong>Report Generation:</strong> Allows users to download a comprehensive evaluation report.</li>
+    </ol>
+    <p>
+      This combination of machine learning and rule-based feedback ensures both accuracy and actionable insights for writers.
+    </p>
+    
+    <h3 style="color: #357abd; margin-top: 2rem;">Why Was This System Made?</h3>
+    <p>
+      This AES system was developed as a <strong>final year project</strong> by four dedicated students (Tarangini Dwivedi, Nandana Nambiar, Sejal Jadhav, Neeti Jample) with a passion for artificial intelligence and educational technology. Our goal was to tackle the complex challenge of automating essay evaluation—a task that requires both linguistic understanding and robust machine learning. By combining deep learning with user-friendly design, we aim to empower students, teachers, and lifelong learners to improve their writing with instant, reliable feedback.
+    </p>
+  </section>
+</main>
+{% endblock %}

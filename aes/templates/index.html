@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block nav_left %}
+  <a href="/about">About</a>
+  <a href="/goal">Goal</a>
+{% endblock %}
+{% block content %}
+  <main>
+    <form id="essay-form">
+      <textarea id="essay" name="essay" placeholder="Write or paste your essay here..."></textarea>
+      <button type="button" id="clear-essay-btn" title="Clear essay" class="clear-essay-btn">✖</button>
+      <button type="submit">Evaluate</button>
+      <div class="extra-options">
+        <label for="file-upload" class="custom-upload">📄 Upload DOC/DOCX
+          <input type="file" id="file-upload" name="docfile" accept=".doc,.docx" hidden>
+        </label>
+        <!-- 🔽 Dropdown Download Button -->
+        <div class="dropdown">
+          <button id="download-btn" type="button" class="custom-download">📥 Download ▼</button>
+          <div class="dropdown-content">
+            <button type="button" onclick="downloadReport('pdf')">Download PDF</button>
+            <button type="button" onclick="downloadReport('docx')">Download DOCX</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <div id="loading" style="display: none;">Evaluating... Please wait.</div>
+    <div class="result" id="score"></div>
+    <div class="result" id="feedback"></div>
+    <div class="result" id="highlighted"></div>
+    <div class="result" id="legend"></div>
+  </main>
+{% endblock %}

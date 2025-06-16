@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block nav_left %}
+  <a href="/">Essay Grading</a>
+  <a href="/about">About</a>
+{% endblock %}
+{% block content %}
+<main>
+  <section class = "info-section">
+    <h2 style="color: #4a90e2; font-size: 2rem; margin-bottom: 1.2rem;">Project Goals</h2>
+    
+    <h3 style="color: #357abd; margin-top: 2rem;">What is the Goal?</h3>
+    <p>
+      The primary goal of our Automated Essay Scoring System is to <strong>bridge the gap between human evaluation and instant, objective feedback</strong>. We aim to provide a tool that not only scores essays accurately but also guides users toward better writing through detailed, actionable feedback.
+    </p>
+    
+    <h3 style="color: #357abd; margin-top: 2rem;">Need for an AES System</h3>
+    <ul style="margin-left: 1.2rem;">
+      <li><strong>Scalability:</strong> Manual essay grading is time-consuming and subjective. AES systems can evaluate thousands of essays in seconds, ensuring consistency and fairness.</li>
+      <li><strong>Instant Feedback:</strong> Students benefit from immediate insights, allowing them to learn and improve iteratively.</li>
+      <li><strong>Support for Educators:</strong> Teachers can focus on higher-level instruction while the system handles routine evaluation.</li>
+      <li><strong>Accessibility:</strong> Anyone, anywhere, can access high-quality writing feedback without waiting for a human grader.</li>
+      <li><strong>Data-Driven Insights:</strong> AES systems can identify common writing issues across large groups, helping educators tailor their teaching.</li>
+    </ul>
+    
+    <h3 style="color: #357abd; margin-top: 2rem;">Why This Project is Unique</h3>
+    <p>
+      Unlike basic spellcheckers or rule-based grammar tools, our AES system integrates a <strong>deep learning LSTM model</strong> with advanced feature extraction and real-time grammar feedback. This hybrid approach allows for nuanced scoring and personalized suggestions, making the system both powerful and user-friendly.
+    </p>
+    <p>
+      The project also emphasizes a modern, accessible UI with light/dark mode, downloadable reports, and support for file uploads—demonstrating both technical and design complexity.
+    </p>
+    
+    <h3 style="color: #357abd; margin-top: 2rem;">A Complex, Collaborative Effort</h3>
+    <p>
+      Building this AES system required expertise in machine learning, natural language processing, web development, and user experience design. As a final year project by four students (Tarangini Dwivedi, Nandana Nambiar, Sejal Jadhav, Neeti Jample), it showcases our ability to tackle real-world, interdisciplinary challenges and deliver a solution that can make a positive impact in education.
+    </p>
+  </section>
+</main>
+{% endblock %}
