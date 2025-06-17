@@ -152,7 +152,7 @@ This project is licensed under the GNU License.
 
 ---
 
-Thank you for exploring the Automated Essay Scoring System. Feel free to contribute or submit issues!
+Thank you for exploring the Automated Essay Scoring System. Feel free to contribute.
 
 
 ```
